@@ -1,0 +1,296 @@
+html
+{
+  scroll-behavior: smooth;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
+  
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: inline;
+  color: #5e2678;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+}
+
+li a:hover
+{
+  color:#a767ab;
+  background-color: ;
+}
+
+li a.active
+{
+  color:#e9eaeb;
+  background-color:#a767ab ;
+  text-decoration: overline;
+}
+
+
+.logoimg
+{
+  width: 200px;
+  height: 53px;
+  float: left;
+}
+
+h1
+{
+  font-family: amatic SC;
+  font-size: 7em;
+  text-align: center;
+
+}
+
+body
+{
+  background-image: url(../images/page_images/bg.jpg);
+  
+}
+
+.online
+{
+  color:#a767ab;
+}
+
+.seen
+{
+  color:#9e9fa1 ;
+}
+
+.contact
+{
+  color:#9e9fa1 ; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: ; /* Set a background color */
+  color: #5e2678; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color:#9e9fa1; /* Add a dark-grey background on hover */
+}
+
+.footer-content
+{
+  text-align: center;
+  color: #9e9fa1;
+
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type=submit]
+ {
+  color:#5e2678 ;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
+}
+
+.contact-wrapper {
+  border-radius: 5px;
+  padding: 50px;
+
+}
+
+.submitbutton
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
+  border: hidden;
+  cursor: pointer;
+  color: #5e2678;
+  padding: 5px 15px 5px 15px;
+  border-radius: 1.25em;
+  width: 100%;
+}
+
+.submitbutton:hover
+{
+  color:#e9eaeb;
+  background-color: #a767ab;
+  transform: scale(1.09);
+}
+ 
+.navigationbar
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+}
+
+.navlinks ul
+{
+  display: flex;
+}
+
+.navlinks li a
+{
+  display: block;
+  padding: 0rem 1rem 0 1rem;
+
+}
+
+.togglbutton
+{
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.togglbutton .bar
+{
+  height: 3px;
+  width: 100%;
+  background-color: #5e2678;
+  border-radius: 10px;
+}
+
+.togglbutton .bar:hover
+{
+  height: 3px;
+  width: 100%;
+  background-color: #a767ab;
+  border-radius: 10px;
+}
+
+@media(max-width: 700px)
+{
+  .togglbutton{
+    display: flex;
+  }
+
+  .navlinks
+  {
+    display: none;
+    width: 100%;
+  }
+
+  .navigationbar
+  {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navlinks ul{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navlinks li
+  {
+    text-align: center;
+  }
+
+  .navlinks li a
+  {
+    padding: .5rem 1rem;
+  }
+
+  .navlinks.active
+  {
+    display: flex;
+  } 
+}
+
+.topbtn {
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+}
+
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+ 
+
+.container
+{
+  width: 100%;
+  min-height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.gallery img
+{
+  width: 100%;
+}
+
+.galh1
+{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: #9e9fa1;
+}
