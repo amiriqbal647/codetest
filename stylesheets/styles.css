@@ -526,3 +526,24 @@ input[type=submit]
 
 /******************************END OF BACKGROUND EFFECT***************************************/
 
+.socials
+{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 0;
+  padding-bottom: 0px;
+}
+
+.socials a
+{
+  color: #5e2678;
+  padding: 15px;
+  font-size: 25px;
+}
+
+.socials a:hover
+{
+  color: #a767ab;
+}
+
