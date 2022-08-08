@@ -27,3 +27,20 @@ const navigationlinks =document.getElementsByClassName("navlinks")[0]
 toggleButton.addEventListener("click",() => {
 	navigationlinks.classList.toggle("active")
 })
+
+/*****************FUNCTION FOR TYPING EFFECT*****************/
+
+var quoteArray = ["online..."];
+var textPosition = 0; 
+// speed in milliseconds
+var speed = 120;
+typewriter = () => {
+  document.querySelector("#quote").innerHTML = quoteArray[0].substring(0, textPosition) + '<span>|</span>';
+  
+  if(textPosition++ != quoteArray[0].length)
+    setTimeout(typewriter, speed);
+}
+
+window.addEventListener("load", typewriter)
+
+/**********************************************************/

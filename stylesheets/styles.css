@@ -55,15 +55,13 @@ h1
 
 }
 
-/*body
+body
 {
-  background-image: url(../images/page_images/bg.jpg);
-  
-}*/
+  /*background-image: url(../images/page_images/bg.jpg);*/
 
-.glitch
-{
-  color:#a767ab;
+  height: 100%
+  min-height: 100vh;
+ 
 }
 
 .seen
@@ -183,6 +181,7 @@ input[type=submit]
   padding: 0rem 1rem 0 1rem;
 
 }
+
 
 .togglbutton
 {
@@ -547,3 +546,21 @@ input[type=submit]
   color: #a767ab;
 }
 
+
+/*****************************HOME PAGE ANIMATED TEXT**************************/
+
+.glitch{
+  color:#a767ab;
+}
+
+span
+{
+  animation: blinker 1.75s linear infinite;
+}
+
+@keyframes blinker{
+  50%{
+    opacity: 0;
+  }
+}
+/*****************************HOME PAGE ANIMATED TEXT**************************/
