@@ -553,7 +553,7 @@ input[type=submit]
   color:#a767ab;
 }
 
-span
+.flash
 {
   animation: blinker 1.75s linear infinite;
 }
