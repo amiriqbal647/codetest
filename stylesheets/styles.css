@@ -653,7 +653,7 @@ input[type=submit]
   color:#FFFFFF;
   transition: all ease 0.3s;
 }
-.s-box:hover .bar{
+.s-box:hover .barf{
   display: block;
 }
 @keyframes bar{
