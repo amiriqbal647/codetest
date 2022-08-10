@@ -601,6 +601,7 @@ input[type=submit]
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 0px;
+  margin-bottom: 50px;
   position: relative;
   border: 1px solid #9e9fa1;
 }
@@ -630,7 +631,7 @@ input[type=submit]
   color:#5e2678;
   margin:10px; 
 }
-.bar{
+.barf{
   width: 100px;
   height: 6px;
   position: absolute;
