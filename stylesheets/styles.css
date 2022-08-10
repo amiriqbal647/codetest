@@ -685,3 +685,8 @@ input[type=submit]
 {
   padding: 0px;
 }
+
+footer
+{
+  position: fixed bottom: 0;
+}
